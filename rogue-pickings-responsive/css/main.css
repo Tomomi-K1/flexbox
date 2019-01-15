@@ -68,7 +68,7 @@ header h1 {
 	width: 100%;
 	text-align:center;
 	border-bottom: 3px solid #77a466;
-	/*float: left;*/
+	float: left;
 	padding:10px;/*replace at desktop*/
 	margin: 20px 0 0 0; /*replace at desktop*/
 }
@@ -146,18 +146,6 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
-/*.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
-
-*/
-
 .menu {
 	list-style: none;
 	padding: 0;
@@ -197,44 +185,91 @@ footer span {
 	font-size: 14px;
 }
 
-/***************desktop**************
+/**********tablet version******************/
+@media all and (min-width:768px) {
 
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		border-top: none;
+	}
+
+	.bottom-section{
+		border-top: 1px solid #eee;
+		align-items: flex-start;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.section-two h4,
+	.section-three h4 {
+		padding: 10px 30px;
+	}
+
+	p {
+		padding: 0 30px;
+	}
 }
+ 
 
-header {
-	height: 110px;
-}	
+/***************desktop**************/
+ 
+@media all and (min-width:1200px) {
 
+	header {
+		height: 110px;
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row;
+	}	
 
-header h1 {
-	margin:0;
-    padding: 38px 0;
+	header h1 {
+		margin:0;
+		padding: 38px 0;
+		text-align: left;
+	}
+
+	header nav {
+		padding: 46px 0;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header nav ul li {
+		padding: 0 10px;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three
+		width: 33%;
+		border-top: none;
+	}
+
+	.bottom-section{
+		border-top: 1px solid #eee;
+		align-items: flex-start;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.section-two h4,
+	.section-three h4 {
+		padding: 10px 30px;
+	}
+
+	p {
+		padding: 0 30px;
+	}
+
 }
-
-header nav {
-	padding: 46px 0;
-}
-
-header nav ul li {
-	padding: 0 10px;
-	/*display: inline;
-}
-
-.section-one,
-.section-two,
-.section-three {
-	width: 33%;
-}
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
-
-p {
-	padding: 0 30px;
-}
-
-*/
