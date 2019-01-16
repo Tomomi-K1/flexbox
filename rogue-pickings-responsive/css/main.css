@@ -12,6 +12,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 1em;
 }
 
 .container{
@@ -65,7 +66,6 @@ header h1 {
 	width: 100%;
 	text-align:center;
 	border-bottom: 3px solid #77a466;
-	float: left;
 	padding:10px;
 	margin: 20px 0 0 0; 
 }
@@ -74,7 +74,6 @@ header h1 span {
 }
 
 header nav {
-	float: right;
 	margin: 10px 0;
 }
 header nav ul {
@@ -85,7 +84,7 @@ header nav ul li {
 	list-style-type: none;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 0.875em;
 	padding: 10px;
 }
 header nav ul li a{
@@ -97,7 +96,6 @@ header nav ul li a{
 .bottom-section {
 	width: 100%;
 	margin: 0 auto;
-	clear: both;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -124,17 +122,15 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 25px;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 100%;
-	height: auto;
-	float: left;
 	border-top: 1px solid #eee;
+	width: 100%;
 }
 
 .section-one h4 {
@@ -238,32 +234,6 @@ footer span {
 
 	header nav ul li {
 		padding: 0 10px;
-	}
-
-	.section-one,
-	.section-two,
-	.section-threegit {
-		width: 33%;
-		border-top: none;
-	}
-
-	.bottom-section{
-		border-top: 1px solid #eee;
-		align-items: flex-start;
-	}
-
-	.section-two {
-		border-left: 1px solid #eee;
-		border-right: 1px solid #eee;
-	}
-
-	.section-two h4,
-	.section-three h4 {
-		padding: 10px 30px;
-	}
-
-	p {
-		padding: 0 30px;
 	}
 
 }
